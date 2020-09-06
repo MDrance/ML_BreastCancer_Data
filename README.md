@@ -1,17 +1,17 @@
 # Different machine learning models using Breast Cancer Wisconsin (Diagnostic) Data Set from Kaggle
 The goal of this repo is to test different ML models and evaluate their metrics.
 
-## 1/Pre-processing the data
+## 1.Pre-processing the data
 
 Raw data are stored in data.csv.
 The Breast_cancer.py script aims to process the data, cleaning them and modifying them in a way that will help our model. The output is modified_data.csv
 This dataset is a pretty good one as we have no missing values and only continuous numerical values (except for the diagnosis).
 
 
-## 2/Testing a Support Vector Machine model
+## 2.Testing a Support Vector Machine model
 
-cancer_svm.py is a script training a SVM model. 
-After training, tuning and testing it on test data, the model has converged with an F1 score of 0.97 on the CV set and a prediction accuracy of 0.96 on the test set. The best hyper-parameters for this model are C = 10000, gamma = 0.001 and a radial basis function kernel. 
+cancer_svm.py is a script training and optimizing our SVM model. 
+For the fine tuning part, we use cross-validation and grid-search methods to find the best value for C (regularization), the best kernel bewteen polynomial and Radial basis function and f using RBF the best value for gamma(curvature of decision boundary).
 
 After running :
 ```
@@ -27,3 +27,7 @@ Score on test data =  0.9649122807017544
 ```
 Our learning curves and confusion matrix look like this :
 ![Learning curves](https://github.com/MDrance/ML_BreastCancer_Data/blob/master/confmatlearcur.png)
+
+* The confusion matrix shows no false positives and 4 false negatives.
+* We observe from our learning curves that the Train and Validation Curves converge at a score of 0.98 when the train size reaches 325 samples. It is not clear if adding more data could help them converging more (getting a lower irreductible error). 
+* As our training curves converge and converge to a high score value, our model is not suffering high bias (underfitting) or high variance (overfitting).
