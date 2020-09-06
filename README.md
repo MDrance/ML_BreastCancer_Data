@@ -11,7 +11,7 @@ This dataset is a pretty good one as we have no missing values and only continuo
 ## 2.Testing a Support Vector Machine model
 
 cancer_svm.py is a script training and optimizing our SVM model. 
-For the fine tuning part, we use cross-validation and grid-search methods to find the best value for C (regularization), the best kernel bewteen polynomial and Radial basis function and f using RBF the best value for gamma(curvature of decision boundary).
+For the fine tuning part, we use cross-validation and grid-search methods to find the best value for C (regularization), the best kernel bewteen polynomial and Radial Basis Function and if using RBF the best value for gamma(curvature of decision boundary).
 
 After running :
 ```
