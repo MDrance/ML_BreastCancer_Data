@@ -14,10 +14,14 @@ cancer_svm.py is a script training a SVM model.
 After training, tuning and testing it on test data, the model has converged with an F1 score of 0.97 on the CV set and a prediction accuracy of 0.96 on the test set. The best hyper-parameters for this model are C = 10000, gamma = 0.001 and a radial basis function kernel. 
 
 After running :
-```grid = GridSearchCV(estimator = my_svm, param_grid = param_grid, cv=10, verbose=2, scoring='f1_macro')
-grid.fit(X_train_scaled, y_train)```
+```
+grid = GridSearchCV(estimator = my_svm, param_grid = param_grid, cv=10, verbose=2, scoring='f1_macro')
+grid.fit(X_train_scaled, y_train)
+```
 we get :
-```[Parallel(n_jobs=1)]: Done 3380 out of 3380 | elapsed:   22.0s finished
+```
+[Parallel(n_jobs=1)]: Done 3380 out of 3380 | elapsed:   22.0s finished
 Best F1 score =  0.9734173436771627
 With best parameters :  {'C': 10000.0, 'gamma': 0.001, 'kernel': 'rbf'}
-Score on test data =  0.9649122807017544```
+Score on test data =  0.9649122807017544
+```
