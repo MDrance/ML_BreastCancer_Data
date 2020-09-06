@@ -3,14 +3,14 @@ The goal of this repository is to test different ML models and evaluate their me
 
 ## 1.Pre-processing the data
 
-Raw data are stored in data.csv.
-The Breast_cancer.py script aims to process the data, cleaning them and modifying them in a way that will help our model. The output is modified_data.csv
+Raw data are stored in **data.csv**.
+The **Breast_cancer.py** script aims to process the data, cleaning them and modifying them in a way that will help our model. The output is **modified_data.csv**
 This dataset is a pretty good one as we have no missing values and only continuous numerical values (except for the diagnosis).
 
 
 ## 2.Testing a Support Vector Machine model
 
-cancer_svm.py is a script training and optimizing our SVM model. 
+**cancer_svm.py** is a script training and optimizing our SVM model. 
 For the fine tuning part, we use cross-validation and grid-search methods to find the best value for C (regularization), the best kernel bewteen polynomial and Radial Basis Function and if using RBF the best value for gamma(curvature of decision boundary).
 
 After running :
