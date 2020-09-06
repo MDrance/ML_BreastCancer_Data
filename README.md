@@ -25,3 +25,5 @@ Best F1 score =  0.9734173436771627
 With best parameters :  {'C': 10000.0, 'gamma': 0.001, 'kernel': 'rbf'}
 Score on test data =  0.9649122807017544
 ```
+Our learning curves and confusion matrix look like this :
+![Learning curves](https://octodex.github.com/images/yaktocat.png)
