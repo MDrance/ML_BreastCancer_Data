@@ -26,4 +26,4 @@ With best parameters :  {'C': 10000.0, 'gamma': 0.001, 'kernel': 'rbf'}
 Score on test data =  0.9649122807017544
 ```
 Our learning curves and confusion matrix look like this :
-![Learning curves](https://octodex.github.com/images/yaktocat.png)
+![Learning curves](https://github.com/MDrance/ML_BreastCancer_Data/blob/master/confmatlearcur.png)
