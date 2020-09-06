@@ -1,5 +1,5 @@
-# Different machine learning models using Breast Cancer Wisconsin (Diagnostic) Data Set from Kaggle
-The goal of this repo is to test different ML models and evaluate their metrics.
+# Different machine learning models on Breast Cancer Wisconsin (Diagnostic) Data Set from Kaggle
+The goal of this repository is to test different ML models and evaluate their metrics.
 
 ## 1.Pre-processing the data
 
