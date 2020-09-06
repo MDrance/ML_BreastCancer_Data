@@ -51,9 +51,3 @@ N, train_score, val_score = learning_curve(model, X_train_scaled, y_train, train
 sns.lineplot(N, train_score.mean(axis=1), label = "Train", ax=axs[1])
 sns.lineplot(N, val_score.mean(axis=1), label = "Validation", ax=axs[1])
 plt.show()
-
-"""
-We observe from our learning curves that the Train and Validation Curves converge at a score of 0.98 when the train size reach 325 samples
-It is not clear if adding more data could help them ending closer
-As our training curves converge and converge to a high score value, our model is not suffering high bias (underfitting) or high variance (overfitting)
-"""
