@@ -75,5 +75,5 @@ Our learning curves and confusion matrix look like this :
 * The confusion matrix shows no false positives and 3 false negatives, showing better results than the SVM model.
 * We observe from our learning curves that the Validation score increases and it is not clear if it could increase more (no real plateau). Adding more data
 could help observe if the train phase reaches its limit. Train curve is not important as in Random Forest, samples take the same path through the trees when
-training and predicting.
+training and predicting, I should have used a other metric for the learning curves such as MSE.
 * Globally, the metrics are a little bit better than the ones using an SVM model and our model is not suffering high bias (underfitting) or high variance (overfitting).
